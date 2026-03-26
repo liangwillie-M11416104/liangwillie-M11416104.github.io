@@ -283,13 +283,16 @@
     }
 
     function drawSciFiSkeleton(hand, gx, gy) {
-      stroke(red(mainColor), green(mainColor), blue(mainColor), 80);
+      push(); // 儲存繪圖狀態
+      strokeWeight(6); // 把線條加粗
+      stroke(red(mainColor), green(mainColor), blue(mainColor), 150); // 將透明度提高讓粗線更明顯
       let connections = handPose.getConnections();
       for (let i = 0; i < connections.length; i++) {
         let a = connections[i][0], b = connections[i][1];
         line(map(hand.keypoints[a].x, 0, 640, 0, width) + gx, map(hand.keypoints[a].y, 0, 480, 0, height) + gy,
           map(hand.keypoints[b].x, 0, 640, 0, width) + gx, map(hand.keypoints[b].y, 0, 480, 0, height) + gy);
       }
+      pop(); // 恢復狀態以免影響後面的繪圖
     }
 
     function drawAllPoints(hand, gx, gy) {

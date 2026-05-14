@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>懂吃更要懂傳奇：揭秘台灣「牛排教父」鄧有癸的美味宇宙</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+TC:wght@300;400;500;700&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        crayon: {
+                            red: '#E63946',
+                            blue: '#457B9D',
+                            yellow: '#F1FAEE',
+                            charcoal: '#1D3557',
+                            paper: '#FDFCF0',
+                            orange: '#F4A261',
+                            green: '#2A9D8F'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['"ZCOOL KuaiLe"', '"Zhi Mang Xing"', 'cursive'],
+                        body: ['"Noto Sans TC"', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'paper-texture': "url('https://www.transparenttextures.com/patterns/recycled-paper.png')",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FDFCF0;
+            background-image: url('https://www.transparenttextures.com/patterns/recycled-paper.png');
+            color: #1D3557;
+            overflow-x: hidden;
+        }
+
+        .crayon-border {
+            border: 4px solid #1D3557;
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+        }
+
+        .crayon-box {
+            position: relative;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(8px);
+            border: 3px solid #1D3557;
+            box-shadow: 8px 8px 0px #F4A261;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .crayon-box:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px #F4A261;
+        }
+
+        .hand-drawn-line {
+            height: 4px;
+            background: #E63946;
+            width: 100%;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            transform: rotate(-1deg);
+        }
+
+        .scribble-bg {
+            position: absolute;
+            z-index: -1;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(1deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        .media-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 5px solid white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            filter: saturate(1.2) contrast(1.1);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FDFCF0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #F4A261;
+            border-radius: 10px;
+            border: 3px solid #FDFCF0;
+        }
+
+        h1, h2, h3 {
+            font-family: 'ZCOOL KuaiLe', 'Zhi Mang Xing', cursive;
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            border: 2px solid rgba(29, 53, 87, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .highlight-marker {
+            background: linear-gradient(120deg, rgba(244, 162, 97, 0.3) 0%, rgba(244, 162, 97, 0.3) 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 80%;
+        }
+    </style>
+</head>
+<body class="font-body antialiased">
+
+    <!-- Header Section -->
+    <header class="relative pt-10 pb-6 px-6 overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-block px-4 py-1 bg-crayon-red text-white font-bold rounded-full text-sm mb-4 transform -rotate-2">
+                美食職人誌
+            </span>
+            <h1 class="text-4xl md:text-6xl font-bold text-crayon-charcoal mb-6 leading-tight">
+                懂吃更要懂傳奇：<br>
+                <span class="text-crayon-blue">揭秘台灣「牛排教父」</span><br>
+                <span class="highlight-marker">鄧有癸的美味宇宙</span>
+            </h1>
+            <p class="text-lg md:text-xl text-crayon-charcoal/80 font-medium">
+                文／學號：M11416104
+            </p>
+        </div>
+        
+        <!-- Decorative Scribbles -->
+        <div class="scribble-bg top-10 left-10 scale-150 transform rotate-12">🌀</div>
+        <div class="scribble-bg bottom-0 right-10 scale-[2] transform -rotate-12">✨</div>
+    </header>
+
+    <!-- Banner Media -->
+    <section class="max-w-5xl mx-auto px-4 mb-16">
+        <div class="media-container crayon-border p-2 bg-white transform rotate-1 shadow-2xl relative">
+            <img src='https://opal.google/board/blobs/8d2fe845-eba9-4f52-b60c-6b5db8d74a4b' alt='教父牛排視覺圖' class="w-full object-cover max-h-[500px]" />
+            <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-crayon-orange rounded-full flex items-center justify-center text-white font-bold transform rotate-12 text-sm text-center p-2 border-4 border-white">
+                MICHELIN<br>STAR
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Body -->
+    <main class="max-w-3xl mx-auto px-6 pb-20">
+        
+        <!-- Intro Section -->
+        <article class="mb-16">
+            <h3 class="text-2xl md:text-3xl text-crayon-red mb-6 flex items-center gap-2">
+                <span class="w-8 h-8 rounded-full bg-crayon-red text-white flex items-center justify-center text-sm">？</span>
+                前言：誰是牛排界的「教父」？
+            </h3>
+            <div class="glass-card leading-relaxed text-lg text-crayon-charcoal/90">
+                <p class="mb-4">
+                    如果你是一個對美食稍有執念的人，你的清單裡一定有一塊留給<span class="font-bold text-crayon-blue">「老饕牛排」</span>的位置。即便你尚未踏進那間位於大直、連年蟬聯米其林一星的「教父牛排」（Danny's Steakhouse），你大概也聽過這個名字。
+                </p>
+                <p>
+                    在台灣餐飲界，鄧有癸（Danny Deng）不僅是一個名字，更是一個標籤。這位五十多年來始終與「火候」搏鬥的職人，用一柄餐刀劃開了台灣高端牛排的演進史。從台北大直的旗艦店出發，他的美味版圖早已擴散至信義區、台中甚至高雄。但比起這些商業成就，我更感興趣的是：一位當初的小學徒，是如何在時間的熟成下，變成了眾人尊稱的「教父」？
+                </p>
+            </div>
+        </article>
+
+        <div class="hand-drawn-line"></div>
+
+        <!-- Section 1 -->
+        <article class="mb-16">
+            <h3 class="text-2xl md:text-3xl text-crayon-blue mb-6">一、 練功 50 年：教父是怎樣煉成的？</h3>
+            <div class="crayon-box p-8 bg-white/60">
+                <p class="mb-4">
+                    我們常說「台上一分鐘，台下十年功」，鄧有癸的「功」則是整整五十載。
+                </p>
+                <p class="mb-4">
+                    時光撥回 1970 年代，那是台灣高級餐飲的黃金起點，鄧有癸在傳奇的「新濱鐵板燒」開始了他的修煉。在那裡，他學會的不只是如何翻動鏟子，更是如何精準地在幾秒鐘內判斷肉質與熱能的交互作用。這段鐵板燒的基底，讓他對「高級肉品」有了一種近乎直覺的敏銳。
+                </p>
+                <div class="bg-crayon-paper p-4 border-l-4 border-crayon-blue my-6 italic">
+                    「他不僅會烤肉，他更懂得如何定義頂級。」
+                </div>
+                <p>
+                    隨後，他不再滿足於現場操作，轉而成為高端牛排館幕後的推手。如果你還記得當年國賓飯店「A Cut」或維多麗亞酒店「No. 168 Prime」初登場時的驚艷，那背後其實都有他的靈魂。最終，透過自立門戶，「教父」封號不脛而走——這不僅是江湖地位的象徵，更是因為他為台灣的高端牛排設立了一套難以動搖的職人標準。
+                </p>
+            </div>
+        </article>
+
+        <!-- Section 2: Bento Style for Core Tech -->
+        <article class="mb-16">
+            <h3 class="text-2xl md:text-3xl text-crayon-orange mb-6">二、 那些讓你流口水的核心科技</h3>
+            <p class="mb-8 text-lg">為什麼他的牛排特別好吃？這不是魔法，而是一場關於味覺的精準實驗。</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="crayon-box p-6 bg-yellow-50/80 md:col-span-2">
+                    <h4 class="font-bold text-xl mb-2 text-crayon-red">★ 老饕牛排 (Top Cap Steak)</h4>
+                    <p>在鄧有癸之前，肋眼牛排就是肋眼；但他卻像個精細的解剖學家，將肋眼上方那層極其鮮嫩、油脂豐富的「上蓋肉」獨立切出。這個舉動徹底改變了台灣市場。</p>
+                </div>
+                
+                <div class="crayon-box p-6 bg-blue-50/80">
+                    <h4 class="font-bold text-xl mb-2 text-crayon-blue">⏳ 乾式熟成</h4>
+                    <p>這就像紅酒或重發酵茶，透過牛肉內部的酵素自體分解，將肉質軟化並濃縮其風味。</p>
+                </div>
+
+                <div class="crayon-box p-6 bg-orange-50/80">
+                    <h4 class="font-bold text-xl mb-2 text-crayon-orange">🔥 荔枝木炙烤</h4>
+                    <p>利用木柴燃燒時產生的果木香氣，為牛排表層賦予一層酥脆（Crust）且帶著煙燻質感的靈魂。</p>
+                </div>
+            </div>
+            
+            <p class="mt-8 glass-card border-none bg-crayon-charcoal/5 italic text-center">
+                在知識分子的眼裡，米其林一星的底氣不僅在於食材，更在於那種「台式極致服務」的精準度——這是一場穩定美學的交響樂。
+            </p>
+        </article>
+
+        <div class="hand-drawn-line" style="background: #457B9D; transform: rotate(1deg);"></div>
+
+        <!-- Section 3 -->
+        <article class="mb-16">
+            <h3 class="text-2xl md:text-3xl text-crayon-green mb-6">三、 明星也有煩惱：關於教父的兩三事</h3>
+            <div class="space-y-6">
+                <div class="flex gap-4 items-start">
+                    <span class="text-4xl">🤔</span>
+                    <div>
+                        <h4 class="font-bold text-lg text-crayon-charcoal">價格與價值的激辯</h4>
+                        <p class="text-crayon-charcoal/80 leading-relaxed">當一份套餐動輒三千至五千元，人們不免會開始計算「C/P 值」。有些人質疑配菜與甜點是否過於傳統？這其實反映了兩種消費心理：是要穩定的經典感，還是不確定的新鮮感？</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <span class="text-4xl">⚖️</span>
+                    <div>
+                        <h4 class="font-bold text-lg text-crayon-charcoal">分店 vs 旗艦店</h4>
+                        <p class="text-crayon-charcoal/80 leading-relaxed">如何在擴張的同時維持那份職人的靈魂，是教父當前最大的試煉。火候落差常成為老饕們指指點點的談資。</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <span class="text-4xl">🚀</span>
+                    <div>
+                        <h4 class="font-bold text-lg text-crayon-charcoal">出走後的風采</h4>
+                        <p class="text-crayon-charcoal/80 leading-relaxed">早年與飯店的分手風雲，雖然引發熱議，但若沒有當年的出走，或許我們今天就看不到這麼有個人色彩的「教父系列」了。</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section 4 -->
+        <article class="mb-16">
+            <h3 class="text-2xl md:text-3xl text-crayon-charcoal mb-6">四、 不老教父的下一局：輕鬆食代與永續想像</h3>
+            <div class="relative p-8 rounded-3xl bg-crayon-yellow border-2 border-dashed border-crayon-charcoal/30 overflow-hidden">
+                <div class="relative z-10 space-y-4">
+                    <p>年過七旬的鄧有癸，似乎沒有要停下來的意思，反而越活越年輕。</p>
+                    <p>他推出了 <strong class="text-crayon-red">MUCHOYAKI</strong>，打破了牛排館總是得西裝筆挺的刻板印象。在開放式廚房與調酒文化的交織下，牛排變得輕鬆、活潑。</p>
+                    <p>甚至，他也把目光投向了家庭廚房與<strong class="text-crayon-green">永續想像</strong>。透過與美國 Brandts Farm 的長期契作，確保食材來源的穩定與透明，這是在追求極致美味之餘，對環境永續的一份補償與反思。</p>
+                </div>
+                <div class="absolute top-0 right-0 p-4 opacity-10 text-8xl">🥩</div>
+            </div>
+        </article>
+
+        <!-- Conclusion -->
+        <footer class="mt-20">
+            <div class="crayon-border bg-crayon-charcoal text-white p-10 relative overflow-hidden">
+                <div class="relative z-10">
+                    <h3 class="text-3xl mb-6 text-crayon-orange">結語：在教父的餐桌上，我們吃的不只是牛肉</h3>
+                    <p class="mb-6 leading-relaxed opacity-90">
+                        總結來說，鄧有癸對台灣餐飲界的貢獻，在於他將「牛排」從一種昂貴的西餐，昇華為一門揉合了農學、熱動力學與美學的藝術。他向我們證明了，專注做一件事五十年的力量有多大。
+                    </p>
+                    <p class="leading-relaxed font-medium text-crayon-yellow">
+                        如果你問我什麼時候適合去朝聖？我會建議你在一個值得慶祝的日子，或是單純想犒賞自己那顆被生活磨損的心靈時。坐在那裡，你吃下的不僅是那塊充滿果木焦香的牛肉，更是一位職人對「完美」二字的執著與堅持。
+                    </p>
+                    <div class="mt-8 pt-6 border-t border-white/20 text-right">
+                        <span class="font-display text-xl">學號：M11416104</span>
+                    </div>
+                </div>
+                <div class="scribble-bg bottom-0 right-0 text-white/5 text-[200px] leading-none">👨‍🍳</div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Floating UI Decorations -->
+    <div class="fixed top-1/4 -left-8 text-4xl floating opacity-20 pointer-events-none">🖍️</div>
+    <div class="fixed bottom-1/4 -right-8 text-4xl floating opacity-20 pointer-events-none" style="animation-delay: 1s;">✏️</div>
+    <div class="fixed top-2/3 -left-4 text-4xl floating opacity-20 pointer-events-none" style="animation-delay: 2s;">🌈</div>
+
+</body>
+</html>
